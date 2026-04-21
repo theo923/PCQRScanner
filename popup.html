@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>QR Scanner</title>
+  <style>
+    body {
+      width: 300px;
+      margin: 0;
+      padding: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #f9fafb;
+      color: #374151;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result {
+      margin-top: 16px;
+      font-size: 14px;
+      word-break: break-all;
+      min-height: 40px;
+      padding: 10px;
+      border-radius: 6px;
+      background-color: #ffffff;
+      border: 1px solid #d1d5db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .error {
+      color: #ef4444;
+    }
+  </style>
+</head>
+<body>
+  <h2>QR Scanner</h2>
+  <button id="scan-btn">Scan Active Tab</button>
+  <div id="result">Click the button to scan for QR codes.</div>
+  
+  <script src="jsQR.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
